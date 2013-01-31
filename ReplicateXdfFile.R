@@ -11,7 +11,6 @@
 ReplicateXdfFile <- function(
 	inFileName, # The base name of the file with no extension or path (i.e. "AirlineData87to08")
 	dataDirInput, dataDirOutput,reps	# The directory where the input is and the output file will be written
-	reps		# The number of replications to make
 	)
 {
 	outFileName = paste(inFileName, "Rep", reps, sep="")
