@@ -14,7 +14,9 @@ billionRowsData <- RxXdfData(billionRowsData)
 
 # if running on NumaConnect
 rxOptions(computeContext=RxLocalParallel())
-#rxOptions( computeContext = myWaitCluster )
+
+# if running 8 cores
+rxOptions(numCoresToUse=8)
 
 # Model with 7 coefficients
 system.time(
